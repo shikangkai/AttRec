@@ -22,6 +22,6 @@ public class RecFragment extends BaseFragment {
 
     @Override
     protected void initView(View rootView, Bundle savedInstanceState) {
-
+        // TODO
     }
 }
