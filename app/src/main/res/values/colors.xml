@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <!-- 标准颜色库：https://www.google.com/design/spec/style/color.html#color-color-palette -->
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#2196F3</color>
 
     <color name="holobor_black">#212121</color>
     <color name="holobor_black_light">#424242</color>
@@ -15,4 +18,5 @@
     <color name="holobor_green_light">#8BC34A</color>
     <color name="holobor_orange">#FF9800</color>
     <color name="holobor_orange_dark">#FF5722</color>
+    <color name="holobor_white">#FFFFFF</color>
 </resources>

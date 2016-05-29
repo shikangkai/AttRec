@@ -4,4 +4,8 @@
     <string name="attendance">考勤</string>
     <string name="record">记录</string>
     <string name="setting">设置</string>
+
+    <string name="doing_work">上班中</string>
+    <string name="done_work">已下班</string>
+    <string name="un_att">未打卡</string>
 </resources>

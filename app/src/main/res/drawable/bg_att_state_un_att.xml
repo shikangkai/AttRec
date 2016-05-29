@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="@dimen/radius_txt_att_state" />
+    <size android:height="@dimen/height_txt_att_state" android:width="@dimen/width_txt_att_state" />
+    <solid android:color="@color/holobor_orange" />
+</shape>

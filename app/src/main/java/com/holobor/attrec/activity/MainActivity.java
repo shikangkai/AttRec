@@ -58,6 +58,37 @@ public class MainActivity extends BaseActivity {
 
         contentPager = (ViewPager) findViewById(R.id.pager);
         contentPager.setAdapter(fragmentPagerAdapter);
+        contentPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
+
+            @Override
+            public void onPageSelected(int position) {
+
+                btnAtt.setSelected(false);
+                btnRec.setSelected(false);
+                btnSet.setSelected(false);
+
+                switch (position) {
+                    case 0:
+                        btnAtt.setSelected(true);
+                        break;
+
+                    case 1:
+                        btnRec.setSelected(true);
+                        break;
+
+                    case 2:
+                        btnSet.setSelected(true);
+                        break;
+
+                    default:
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {}
+        });
     }
 
     /**
@@ -67,23 +98,16 @@ public class MainActivity extends BaseActivity {
      */
     public void onNavClick(View view) {
 
-        btnAtt.setSelected(false);
-        btnRec.setSelected(false);
-        btnSet.setSelected(false);
-
         switch (view.getId()) {
             case R.id.btn_att:
-                btnAtt.setSelected(true);
                 contentPager.setCurrentItem(0);
                 break;
 
             case R.id.btn_rec:
-                btnRec.setSelected(true);
                 contentPager.setCurrentItem(1);
                 break;
 
             case R.id.btn_set:
-                btnSet.setSelected(true);
                 contentPager.setCurrentItem(2);
                 break;
         }

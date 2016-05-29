@@ -47,7 +47,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_normal"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_centerHorizontal="true"
@@ -57,7 +57,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="本月"
+            android:text="本月已工作"
             android:textSize="@dimen/size_txt_small"
             android:textColor="@color/holobor_black_light"
             android:id="@+id/txt_month_tag" />
@@ -66,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="12"
-            android:textSize="@dimen/size_txt_large"
+            android:textSize="@dimen/size_txt_xlarge"
             android:padding="@dimen/padding_normal"
             android:layout_marginLeft="@dimen/margin_small"
             android:layout_marginRight="@dimen/margin_small"
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="98.7"
-            android:textSize="@dimen/size_txt_large"
+            android:textSize="@dimen/size_txt_xlarge"
             android:layout_marginLeft="@dimen/margin_small"
             android:layout_marginRight="@dimen/margin_small"
             android:textColor="@color/holobor_blue"
@@ -116,6 +116,18 @@
             android:rotation="-45"
             android:padding="0dp"
             android:id="@+id/btn_att" />
+
+        <TextView
+            android:layout_width="@dimen/width_txt_att_state"
+            android:layout_height="@dimen/height_txt_att_state"
+            android:gravity="center"
+            android:text="@string/un_att"
+            android:background="@drawable/bg_att_state_un_att"
+            android:textColor="@color/holobor_white"
+            android:textSize="@dimen/size_txt_small"
+            android:layout_toRightOf="@id/btn_att"
+            android:layout_alignBottom="@id/btn_att"
+            android:id="@+id/txt_att_state" />
 
     </RelativeLayout>
 
