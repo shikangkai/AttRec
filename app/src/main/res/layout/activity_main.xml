@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingRight="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:id="@+id/bar_bottom" >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:onClick="onNavClick"
+            android:id="@+id/btn_att" >
+
+            <ImageView
+                android:layout_width="@dimen/size_img_bar_bottom"
+                android:layout_height="@dimen/size_img_bar_bottom"
+                android:src="@drawable/ic_att"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/NavTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:text="@string/attendance"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:onClick="onNavClick"
+            android:id="@+id/btn_rec" >
+
+            <ImageView
+                android:layout_width="@dimen/size_img_bar_bottom"
+                android:layout_height="@dimen/size_img_bar_bottom"
+                android:src="@drawable/ic_rec"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/NavTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:text="@string/record"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:onClick="onNavClick"
+            android:id="@+id/btn_set" >
+
+            <ImageView
+                android:layout_width="@dimen/size_img_bar_bottom"
+                android:layout_height="@dimen/size_img_bar_bottom"
+                android:src="@drawable/ic_set"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/NavTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:text="@string/setting"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.holobor.attrec.view.ViewPagerCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bar_bottom"
+        android:id="@+id/pager" />
+
+</RelativeLayout>

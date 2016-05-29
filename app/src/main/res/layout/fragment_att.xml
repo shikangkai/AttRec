@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:id="@+id/bar_time_today" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textSize="@dimen/size_txt_att_time_hour"
+            android:textColor="@color/holobor_black_light"
+            android:id="@+id/txt_today_att_hour" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:textSize="@dimen/size_txt_att_time_min"
+            android:layout_alignBaseline="@id/txt_today_att_hour"
+            android:layout_toRightOf="@id/txt_today_att_hour"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:textColor="@color/holobor_blue"
+            android:id="@+id/txt_today_att_min" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日累计工时"
+            android:textSize="@dimen/size_txt_small"
+            android:textColor="@color/holobor_gray_dark"
+            android:layout_toRightOf="@id/txt_today_att_hour"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_alignTop="@id/txt_today_att_hour"
+            android:id="@+id/txt_tag" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bar_time_today"
+        android:id="@+id/bar_time_month" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月工作了"
+            android:textSize="@dimen/size_txt_small"
+            android:textColor="@color/holobor_black_light"
+            android:id="@+id/txt_month_tag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="@dimen/size_txt_large"
+            android:padding="@dimen/padding_normal"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:textColor="@color/holobor_blue"
+            android:textStyle="bold"
+            android:id="@+id/txt_month_day"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天，"
+            android:textSize="@dimen/size_txt_small"
+            android:textColor="@color/holobor_black_light"
+            android:id="@+id/txt_month_day_tag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="98.7"
+            android:textSize="@dimen/size_txt_large"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:textColor="@color/holobor_blue"
+            android:textStyle="bold"
+            android:padding="@dimen/padding_normal"
+            android:id="@+id/txt_month_hour"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小时"
+            android:textSize="@dimen/size_txt_small"
+            android:textColor="@color/holobor_black_light" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/bar_time_month" >
+
+        <Button
+            android:layout_centerInParent="true"
+            android:layout_width="128dp"
+            android:layout_height="64dp"
+            android:rotation="-30"
+            android:text="打卡"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

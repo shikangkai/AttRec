@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">天天打卡</string>
+    
+    <string name="attendance">考勤</string>
+    <string name="record">记录</string>
+    <string name="setting">设置</string>
+</resources>

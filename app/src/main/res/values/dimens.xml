@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="size_img_bar_bottom">30dp</dimen>
+    <dimen name="size_txt_bar_bottom">14dp</dimen>
+
+    <dimen name="margin_xtiny">2dp</dimen>
+    <dimen name="margin_tiny">3dp</dimen>
+    <dimen name="margin_xsmall">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_normal">15dp</dimen>
+    <dimen name="margin_big">20dp</dimen>
+    <dimen name="margin_xbig">25dp</dimen>
+    <dimen name="margin_large">30dp</dimen>
+    <dimen name="margin_xlarge">40dp</dimen>
+
+    <dimen name="stroke_tiny">1dp</dimen>
+    <dimen name="stroke_small">2dp</dimen>
+    <dimen name="stroke_normal">5dp</dimen>
+
+    <dimen name="padding_normal">10dp</dimen>
+
+    <dimen name="size_txt_small">16dp</dimen>
+    <dimen name="size_txt_normal">24dp</dimen>
+    <dimen name="size_txt_large">36dp</dimen>
+    <dimen name="size_txt_att_time_min">88dp</dimen>
+    <dimen name="size_txt_att_time_hour">128dp</dimen>
+
+</resources>

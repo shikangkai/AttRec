@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 底部导航栏的文本 -->
+    <style name="NavTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/size_txt_bar_bottom</item>
+        <item name="android:textColor">@drawable/color_text_nav</item>
+    </style>
+</resources>
