@@ -108,14 +108,6 @@
         android:layout_alignParentBottom="true"
         android:layout_below="@id/bar_time_month" >
 
-        <Button
-            android:layout_centerInParent="true"
-            android:layout_width="128dp"
-            android:layout_height="64dp"
-            android:rotation="-30"
-            android:text="打卡"
-            />
-
     </RelativeLayout>
 
 </RelativeLayout>
