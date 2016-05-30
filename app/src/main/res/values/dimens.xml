@@ -19,6 +19,7 @@
     <dimen name="margin_xbig">25dp</dimen>
     <dimen name="margin_large">30dp</dimen>
     <dimen name="margin_xlarge">40dp</dimen>
+    <dimen name="margin_xxlarge">50dp</dimen>
 
     <dimen name="stroke_tiny">1dp</dimen>
     <dimen name="stroke_small">2dp</dimen>
