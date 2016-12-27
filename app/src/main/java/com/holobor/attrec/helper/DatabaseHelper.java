@@ -15,7 +15,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE tATT (ID INTEGER PRIMARY KEY AUTOINCREMENT, START_WORK INTEGER, END_WORK INTEGER);");
+        /**
+         * ID
+         * ATT_START
+         * ATT_END
+         * DAY_STAMP
+         */
+        db.execSQL("CREATE TABLE tATT (ID INTEGER PRIMARY KEY AUTOINCREMENT, ATT_START INTEGER, ATT_END INTEGER, DAY_STAMP INTEGER);");
+        /**
+         * ID
+         * TIME
+         * DAY_STAMP
+         * DIARY
+         * TAG
+         */
+        db.execSQL("CREATE TABLE tDIARY (ID INTEGER PRIMARY KEY AUTOINCREMENT, TIME INTEGER, DAY_STAMP INTEGER, DIARY TEXT)");
     }
 
     @Override

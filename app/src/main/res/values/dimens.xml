@@ -5,6 +5,8 @@
     <dimen name="size_txt_bar_bottom">14dp</dimen>
 
     <dimen name="size_btn_att">172dp</dimen>
+    <dimen name="margin_top_btn_att">-86dp</dimen>
+    <dimen name="margin_left_btn_att">-118dp</dimen>
 
     <dimen name="width_txt_att_state">80dp</dimen>
     <dimen name="height_txt_att_state">32dp</dimen>
@@ -26,6 +28,7 @@
     <dimen name="stroke_normal">5dp</dimen>
 
     <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_btn_att">16dp</dimen>
 
     <dimen name="size_txt_small">16dp</dimen>
     <dimen name="size_txt_normal">20dp</dimen>
@@ -33,7 +36,10 @@
     <dimen name="size_txt_xbig">28dp</dimen>
     <dimen name="size_txt_large">32dp</dimen>
     <dimen name="size_txt_xlarge">36dp</dimen>
-    <dimen name="size_txt_att_time_min">88dp</dimen>
-    <dimen name="size_txt_att_time_hour">128dp</dimen>
+    <dimen name="size_txt_att_time_min">72dp</dimen>
+    <dimen name="size_txt_att_time_hour">112dp</dimen>
+
+    <dimen name="size_btn_quate">36dp</dimen>
+    <dimen name="margin_txt_att_today">-72dp</dimen>
 
 </resources>

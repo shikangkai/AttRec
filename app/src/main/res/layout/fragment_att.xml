@@ -3,46 +3,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="01"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_xxlarge"
-        android:id="@+id/bar_time_today" >
+        android:textSize="@dimen/size_txt_att_time_hour"
+        android:textColor="@color/holobor_black_light"
+        android:id="@+id/txt_att_today" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="01"
-            android:textSize="@dimen/size_txt_att_time_hour"
-            android:textColor="@color/holobor_black_light"
-            android:id="@+id/txt_today_att_hour" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="23"
-            android:textSize="@dimen/size_txt_att_time_min"
-            android:layout_alignBaseline="@id/txt_today_att_hour"
-            android:layout_toRightOf="@id/txt_today_att_hour"
-            android:layout_marginLeft="@dimen/margin_normal"
-            android:textColor="@color/holobor_blue"
-            android:id="@+id/txt_today_att_min" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="今日累计工时"
-            android:textSize="@dimen/size_txt_small"
-            android:textColor="@color/holobor_gray_dark"
-            android:layout_toRightOf="@id/txt_today_att_hour"
-            android:layout_marginLeft="@dimen/margin_normal"
-            android:layout_alignTop="@id/txt_today_att_hour"
-            android:id="@+id/txt_tag" />
-
-    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日累计工时"
+        android:textSize="@dimen/size_txt_small"
+        android:textColor="@color/holobor_gray_dark"
+        android:layout_alignTop="@id/txt_att_today"
+        android:layout_toRightOf="@id/txt_att_today"
+        android:layout_marginLeft="@dimen/margin_txt_att_today"
+        android:id="@+id/txt_tag" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -51,55 +33,24 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/bar_time_today"
+        android:layout_below="@id/txt_att_today"
         android:id="@+id/bar_time_month" >
 
+        <Button
+            android:layout_width="@dimen/size_btn_quate"
+            android:layout_height="@dimen/size_btn_quate"
+            android:background="@drawable/ic_quote_left"
+            android:id="@+id/btn_month_stat" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="本月已工作"
+            android:layout_height="match_parent"
+            android:text="@string/month_att_hint"
             android:textSize="@dimen/size_txt_small"
-            android:textColor="@color/holobor_black_light"
-            android:id="@+id/txt_month_tag" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="12"
-            android:textSize="@dimen/size_txt_xlarge"
-            android:padding="@dimen/padding_normal"
-            android:layout_marginLeft="@dimen/margin_small"
-            android:layout_marginRight="@dimen/margin_small"
-            android:textColor="@color/holobor_blue"
-            android:textStyle="bold"
-            android:id="@+id/txt_month_day"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="天"
-            android:textSize="@dimen/size_txt_small"
-            android:textColor="@color/holobor_black_light"
-            android:id="@+id/txt_month_day_tag" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="98.7"
-            android:textSize="@dimen/size_txt_xlarge"
-            android:layout_marginLeft="@dimen/margin_small"
-            android:layout_marginRight="@dimen/margin_small"
-            android:textColor="@color/holobor_blue"
-            android:textStyle="bold"
-            android:padding="@dimen/padding_normal"
-            android:id="@+id/txt_month_hour"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="小时"
-            android:textSize="@dimen/size_txt_small"
-            android:textColor="@color/holobor_black_light" />
+            android:textColor="@color/holobor_gray_dark"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:gravity="center_vertical"
+            android:id="@+id/txt_att_month" />
     </LinearLayout>
 
     <RelativeLayout
@@ -108,13 +59,21 @@
         android:layout_alignParentBottom="true"
         android:layout_below="@id/bar_time_month" >
 
-        <ImageButton
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_centerInParent="true"
+            android:id="@+id/txt_center" />
+        <Button
             android:layout_width="@dimen/size_btn_att"
             android:layout_height="@dimen/size_btn_att"
             android:background="@drawable/btn_att"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/txt_center"
+            android:layout_below="@id/txt_center"
+            android:layout_marginLeft="@dimen/margin_left_btn_att"
+            android:layout_marginTop="@dimen/margin_top_btn_att"
             android:rotation="-45"
-            android:padding="0dp"
             android:id="@+id/btn_att" />
 
         <TextView
@@ -122,12 +81,19 @@
             android:layout_height="@dimen/height_txt_att_state"
             android:gravity="center"
             android:text="@string/un_att"
-            android:background="@drawable/bg_att_state_un_att"
-            android:textColor="@color/holobor_white"
+            android:textColor="@color/holobor_gray_dark"
             android:textSize="@dimen/size_txt_small"
-            android:layout_toRightOf="@id/btn_att"
             android:layout_alignBottom="@id/btn_att"
+            android:layout_toRightOf="@id/btn_att"
             android:id="@+id/txt_att_state" />
+
+        <Button
+            android:layout_width="@dimen/size_btn_quate"
+            android:layout_height="@dimen/size_btn_quate"
+            android:background="@drawable/ic_quote_right"
+            android:layout_alignBottom="@id/btn_att"
+            android:layout_toRightOf="@id/txt_att_state"
+            android:id="@+id/btn_add_txt" />
 
     </RelativeLayout>
 
